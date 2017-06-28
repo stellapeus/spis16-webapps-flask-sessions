@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Just type some arbitrary letters and numbers.
 # See: http://flask.pocoo.org/docs/0.10/quickstart/#sessions
 
-app.secret_key='w98fw9ef8hwe98fhwef'; #This should be an environment variable.  The value should be set in Heroku.
+app.secret_key=SECRET_KEY; #This is an environment variable.  The value should be set in Heroku. (Settings->Config Vars)
 
 @app.route('/')
 def renderMain():
