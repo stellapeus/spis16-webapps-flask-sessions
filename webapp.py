@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Just type some arbitrary letters and numbers.
 # See: http://flask.pocoo.org/docs/0.10/quickstart/#sessions
 
-app.secret_key=os.env["SECRET_KEY"]; #This is an environment variable.  
+app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
                                      #The value should be set in Heroku (Settings->Config Vars).  
                                      #To run locally, set in env.sh and include that file in gitignore so the secret key is not made public.
 
