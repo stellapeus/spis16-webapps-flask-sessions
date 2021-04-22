@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # In order to use "sessions",you need a "secret key".
 # This is something random you generate.  
-# For more info see: http://flask.pocoo.org/docs/0.10/quickstart/#sessions
+# For more info see: https://flask.palletsprojects.com/en/1.1.x/config/#SECRET_KEY
 
 app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
                                      #The value should be set in Heroku (Settings->Config Vars).  
