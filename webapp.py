@@ -7,8 +7,7 @@ app = Flask(__name__)
 
 # In order to use "sessions",you need a "secret key".
 # This is something random you generate.  
-# Just type some arbitrary letters and numbers.
-# See: http://flask.pocoo.org/docs/0.10/quickstart/#sessions
+# For more info see: http://flask.pocoo.org/docs/0.10/quickstart/#sessions
 
 app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
                                      #The value should be set in Heroku (Settings->Config Vars).  
@@ -39,4 +38,4 @@ def renderPage3():
     return render_template('page3.html')
     
 if __name__=="__main__":
-    app.run(debug=True,host="0.0.0.0",port=54321)
+    app.run(debug=False)
